@@ -1,30 +1,68 @@
 ---
-title: Installing and Configuring YOUR-PRODUCT-NAME
+title: Installing and Configuring Vormetric Transparent Encryption for PCF
 owner: Partners
 ---
 
-This topic describes how to install and configure YOUR-PRODUCT-NAME.
+This topic describes how to install and configure the Vormetric Transparent Encryption for PCF tile.
 
-##<a id='install'></a> Install and Configure YOUR-PRODUCT-NAME
+##<a id='install'></a> Install and Configure the Vormetric Transparent Encryption for PCF
 
-To install the YOUR-PRODUCT-NAME file on the Ops Manager Installation Dashboard, do the following:
+To install the Vormetric Transparent Encryption for PCF tile on the Ops Manager Installation Dashboard, do the following:
 
 1. Download the product file from Pivotal Network.
 
-1. Navigate to the Ops Manager Installation Dashboard and click **Import a Product** to upload the product file. 
+2. Navigate to the Ops Manager Installation Dashboard and click **Import a Product** to upload the product file.
 
-1. Under the **Import a Product** button, click **+** next to the version number of YOUR-PRODUCT-NAME. 
+3. Under the **Import a Product** button, click **+** next to the version number of Vormetric Transparent Encryption for PCF.
 This adds the tile to your staging area.
 
-1. Click the newly added **YOUR-PRODUCT-NAME** tile.
+4. Click the newly added **Vormetric Transparent Encryption for PCF** tile to configure the tile.  There are two
+configuration panels, one for the Registration Service, the other for default configuration in case Registration Service fails.
 
-1. **This portion of the procedure should tell the users how to configure the newly added tile by
+**This portion of the procedure should tell the users how to configure the newly added tile by
 walking them through the sections. Which fields should they fill out? What are the different
-checkboxes? Include relevant screenshots here.** 
+checkboxes? Include relevant screenshots here.**
 
-1. Click **Save**.
 
-1. Return to the Ops Manager Installation Dashboard and click **Apply changes** to install YOUR-PRODUCT-NAME tile.
+4.1. Configuring Registration Service
 
-**If needed, include additional configuration information below. For example, maybe there are
-configuration options not required for installation but which could be useful for certain users.**
+**TODO**
+**screenshots**
+
+Refer to **Appendix A. Translating Pivotal Organization Space to Vormetric Domain** to understand the mapping rule before
+proceed to configure the Vormetric Data Security Manager.
+
+4.2. Configuring default registration information
+
+**TODO**
+**screenshots**
+
+5. Click **Save**.
+
+6. Return to the Ops Manager Installation Dashboard and click **Apply changes** to install the Vormetric Transparent Encryption for PCF tile.
+
+7. Follow the instruction in **Appendix B. Configuring Vormetric Data Security Manager** to complete the required configuration for each domain before creating a service instance for the supported products.
+
+
+##<a id='appendix-a'></a>Appendix A. Translating Pivotal Organization Space to Vormetric Domain
+
+**TODO, see the confluence page**
+
+
+##<a id='appendix-b'></a>Appendix B. Configuring Vormetric Data Security Manager
+
+Step 1. A System Security administrator creates a domain that maps to a Pivotal Organization Space created by a PCF
+operator based on the tile configuration and the naming convention in Appendix A.
+
+Step 2. The System administrator creates a Domain administrator for the domain created in Step 1.
+
+Step 3. The Domain administrator creates a Domain Security administrator with all privileges. For more separation of duty
+using different administrators privileges, refer to the Administrator Guide.
+
+Step 4. The Domain Security administrator creates key, policy, and host group with host settings, shared secret, and guard path for the domain observing the naming
+convention in Appendix A. The shared secret for the host group must be the same for all host groups across all domains.
+
+**TODO, see the confluence page for screen shots**
+
+
+
