@@ -78,7 +78,7 @@ The following table provides version and version-support information about the V
     </tr>
     <tr>
         <td>Compatible Pivotal Application Service (formerly known as Elastic Runtime) version(s)</td>
-        <td>v2.0.x and v2.1.x</td>
+        <td>v2.0.x, v2.1.x, and v2.2.x</td>
     </tr>
     <tr>
         <td>IaaS support</td>
@@ -94,26 +94,18 @@ The following table provides version and version-support information about the V
 ## <a id="reqs"></a>Requirements
 
 The Vormetric Transparent Encryption for PCF has the following requirements:
-
-+ You must have an account with Thales e-Security for the support of Vormetric Data Encryption product suite
-
++ You must have an account with Thales e-Security for the support of Vormetric Data Encryption product suite.
 + You must obtain a license for the Vormetric Data Encryption suite with the Live Data Transformation (LDT) feature.
-
 + You must use PCF v2.0 or later
-
-+ You must install Offline Java Buildpack
-
++ You must install Offline Java Buildpack in PCF
 + You must use PCF MySQL v2.4.0 or later
 
 
 ## <a id="limitations"></a>Limitations
 
 * Manual configuration of domains and security policies, etc. in the Vormetric Data Security Manager is required before using VTE.
-
-* Shared secret for registration must be the same for all host groups in the Vormetric Data Security Manager.
-
-* Selective activation of the Vormetric Transparent Encryption for PCF on service instances is not supported.
-
+* Shared secret for VTE registration must be the same for all host groups and domains in the Vormetric Data Security Manager.
+* Selective activation of the Vormetric Transparent Encryption for PCF in one PCF environment is not supported.
 * The release was tested on Azure and GCP.  It is expected to work with other IaaS as well.
 
 
@@ -122,12 +114,9 @@ The Vormetric Transparent Encryption for PCF has the following requirements:
 If you have a feature request, questions, or information about a bug, please email
 [Pivotal Cloud Foundry Feedback](mailto:cf-feedback@pivotal.io) list.
 
-For Vormetric specific issues, questions or feedback, please contact the support by one of the following:
-
+For Vormetric specific issues, questions or feedback, please contact the support using one of the following method:
  * visit https://help.thalesesecurity.com/hc/en-us
-
- * email questions to support@vormetric.com
- 
+ * email questions to support@vormetric.com 
  * call 877-267-3247
 
 ## <a id='license'></a>License
