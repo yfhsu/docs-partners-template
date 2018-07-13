@@ -7,7 +7,6 @@ This topic describes how to use the Vormetric Transparent Encryption for PCF.
 
 ##<a id='using'></a> Using Vormetric Transparent Encryption for PCF
 
-
 Vormetric Transparent Encryption for PCF works transparently when provisioned properly.  A simple provisioning flow is
 provided below for reference:
 
@@ -19,64 +18,52 @@ Manager, observing the naming convention in the tile configuration.
 Step 3. PCF Operator creates an MySQL instance using the Apps Manager or the cf CLI.
 
 
-To ensure data are protected right from the beginning, the VTE agent must start before the protected service instance starts and stops after the instance stops.
+To ensure data are protected right from the beginning, the VTE agent must start before the service instance starts and
+stops after the instance stops.  The following diagrams illustrate dependency between a VTE agent and the service instance it protects:
 
-The following illustrates the startup and shutdown sequence between a VTE agent and a service instance it protects:
+####Start Up Sequence
 
+TODO, include startup sequence diagram from the confluence doc
 
-**Start Up**
+####Shut Down Sequence
 
-**TODO, include startup sequence diagram from the confluence doc**
-
-**Shut Down**
-
-**TODO, include shutdown sequence diagram from the confluence doc**
+TODO, include shutdown sequence diagram from the confluence doc
 
 
-**Explain purpose of the Registration Service**
+###<a id='regsvc'></a>Registration Service
 
-###<a id='restapi'></a>REST API in Registration Service
+TODO Explain purpose of the Registration Service
 
+####<a id='restapi'></a>Registration Service API
 
 **TODO, from the confluence page**
 
 
-
 ##<a id='troubleshoot'></a>Troubleshooting
-
-**You can also use this section to include information about Architecture and Troubleshooting for known errors.
-If you include a Troubleshooting section, follow the Symptom/Explanation format used in the
-[Okta Troubleshooting](http://docs.pivotal.io/p-identity/okta/troubleshooting.html) topic**.
-
 Check the sys logs for both products to find out more on the failure.
 
 ###<a id='failtoregister'></a>VTE Agent Fails to Install
-
-**Symptom**
+####Symptom
 The pre-start log indicates installation failure.
 
-**Explanations**
+####Explanations
 The most common reason for VTE installation failure is unsupported kernel. Make sure the VM kernel is supported by the VTE agent.
 Downgrading the Stemcell may be necessary to fix the issue.
 
-
 ###<a id='failtostart'></a>VTE Agent Fails to Register
+####Symptom
+The vmd process fails to start in monit summary.
+The pre-start log indicates registration failure.
 
-**Symptom**
-* The vmd process fails to start in monit summary.
-* The pre-start log indicates registration failure.
-
-**Explanations**
-* Registration configuration contains invalid data. Make sure the configurations in the tile and the Vormetric Data Security Manager match.
-
+####Explanations
+Registration configuration contains invalid data. Make sure the configurations in the tile and the Vormetric Data Security Manager match.
 
 ###<a id='accessdenied'></a>Access to Directory Denied
+####Symptom
+The pre-start log of the service instance indicates access to a directory is denied.
+The Vormetric Data Security Manager console indicates security policy violation.
 
-**Symptom**
-* The pre-start log of the service instance indicates access to a directory is denied.
-* The Vormetric Data Security Manager console indicates security policy violation.
-
-**Explanations**
+####Explanations
 The process set in the security policy could be mis-configured.  Make sure the process is whitelisted with the correct access.
 
 
