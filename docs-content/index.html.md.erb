@@ -10,30 +10,37 @@ Do not use this product in a PCF production environment.
 </p>
 
 
-This documentation describes the Vormetric Transparent Encryption (VTE) for Pivotal Cloud Foundry (PCF). The Vormetric
+This documentation describes the Vormetric Transparent Encryption (VTE) tile for Pivotal Cloud Foundry (PCF). The Vormetric
 Transparent Encryption for PCF tile works in conjunction with other on-demand PCF products by encrypting the data of the
 products with access control, allowing security administrators to manage and monitor the instances through the console of the Vormetric Data Security Manager.
 
 
 ## <a id='overview'></a>Overview
 
-The Vormetric Transparent Encryption for PCF tile in its core is a BOSH addon protecting a product instance.  Working
-together with the BOSH addon is a Registration Service that supports multi-tenancy by generating registration data based
-on the tile configuration that maps organizations and spaces to Vormetric domains. In other words, product instances owned
-by one organization and space are protected by VTE agents managed by the corresponding domain according to the mapping rule
-in the tile configuration. The tile registers with a Vormetric Data Security Manager and protects directories based on the
-pre-configured encryption keys and policies for the specific products.
+Vormetric Transparent Encryption (VTE) for PCF protects data stored within PCF products with file-level encryption and
+access control, effectively limiting data file access to only allowed users, groups, and processes.  This combination enables
+organizations to meet compliance requirements and best practices for data security, including access control for
+administrators of the Pivotal environment.
+
+The solution is a BOSH addon and supports multi-tenancy.  A Registration Service maps tenant organizations and spaces as
+defined in Pivotal Apps Manager to domains within a Vormetric data security management environment.  Once registered,
+the Vormetic tile protects directories based on pre-configured encryption keys and policies.  Domains within this
+management environment can isolate management of data security policies and keys for specific PCF instances to specific
+organizations or business units.
 
 The Vormetric Transparent Encryption for PCF currently supports the following PCF products:
 
-* PCF MySQL v2.4.0 or later
+* PCF MySQL v2.4.0 or above
 
 
 ## <a id='features'></a>Key Features
 
-The Vormetric Transparent Encryption for PCF includes the following key features:
+Vormetric Transparent Encryption for PCF includes the following key features:
 
-* Support multi-tenancy with mappings between Pivotal Organization Space and Vormetric Domain.
+* <b>Meet compliance and regulatory requirements for protecting sensitive data</b> – By encrypting and controlling access to data files used with PCF product instances
+* <b>Scalable and automated</b> – Automatically protect data as you add new PCF product instances
+* <b>High Performance</b> – The tile accelerates encryption operations using the hardware encryption capabilities of CPUs in the underlying Pivotal Cloud Foundry environment
+* <b>Multi-tenant</b> – Supports multi-tenancy with mappings between Pivotal Organization Space and Vormetric Data Security Domains
 
 
 ## <a id="snapshot"></a>Product Snapshot
@@ -49,14 +56,14 @@ The following table provides version and version-support information about the V
     </tr>
     <tr>
         <td>Release date</td>
-        <td>July 31, 2018</td>
+        <td>July 31st, 2018</td>
     </tr>
     <tr>
         <td>Vormetric Transparent Encryption version</td>
         <td>v6.0.3.75</td>
     </tr>
     <tr>
-        <td>Supporting Kernel version (up to)</td>
+        <td>Compatible kernel version (up to)</td>
         <td>4.4.0-130-generic</td>
     </tr>
     <tr>
@@ -74,7 +81,7 @@ The following table provides version and version-support information about the V
      </tr>
     <tr>
         <td>Compatible Ops Manager version(s)</td>
-        <td>v2.0.x and v2.1.x</td>
+        <td>v2.0.x, v2.1.x, and v2.2.x</td>
     </tr>
     <tr>
         <td>Compatible Pivotal Application Service (formerly known as Elastic Runtime) version(s)</td>
@@ -95,18 +102,19 @@ The following table provides version and version-support information about the V
 
 The Vormetric Transparent Encryption for PCF has the following requirements:
 
-* You must have an account with Thales e-Security for the support of Vormetric Data Encryption product suite.
-* You must obtain a license for the Vormetric Data Encryption suite with the Live Data Transformation (LDT) feature.
-* You must use PCF v2.0 or later.
+* You must have Vormetric Data Security Manager running software version 6.0.3 or above.
+* You must have an active account with Thales e-Security for the support of Vormetric encryption product suite.
+* You must obtain a license for the Vormetric encryption product suite with the Live Data Transformation (LDT) feature.
+* You must use PCF v2.0 or above.
 * You must install Offline Java Buildpack in PCF.
-* You must use PCF MySQL v2.4.0 or later.
+* You must use PCF MySQL v2.4.0 or above.
 
 
 ## <a id="limitations"></a>Limitations
 * Manual configuration of domains and security policies, etc. in the Vormetric Data Security Manager is required before using VTE.
 * Shared secret for VTE registration must be the same for all host groups and domains in the Vormetric Data Security Manager.
 * Selective activation of the Vormetric Transparent Encryption for PCF in one PCF environment is not supported.
-* The release was tested on Azure and GCP.  It is expected to work with other IaaS as well.
+* The release was tested on Azure and Google Cloud Platform.  It is expected to work with other IaaS as well.
 
 ## <a id="feedback"></a>Feedback
 If you have a feature request, questions, or information about a bug, please email
@@ -115,10 +123,15 @@ If you have a feature request, questions, or information about a bug, please ema
 For Vormetric specific issues, questions or feedback, please contact the support using one of the following methods:
 
 * Visit [the Support website](https://help.thalesesecurity.com/hc/en-us)
-* email [the Support](mailto:support@thalesesecurity.com)
-* call 877-267-3247
+* Email [the Support](mailto:support@thalesesecurity.com)
+* Call 877-267-3247
+
+For Vormetric Sales:
+
+* Email [the Sales](sales@thalesesecurity.com)
+* Call 888-267-3732
 
 ## <a id='license'></a>License
-You must obtain a license for the Vormetric Data Encryption suite with the Live Data Transformation (LDT) feature.
+You must obtain a license for the Vormetric encryption product suite with the Live Data Transformation (LDT) feature.
 
 
