@@ -2,90 +2,112 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04908fab-9861-480e-859f-d28fa2d8e407" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/docs-book/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/lib/search/handler.rb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/lib/search/handler.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/lib/search/query.rb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/lib/search/query.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/lib/search/renderer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/lib/search/renderer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/mail_sender.rb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/mail_sender.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/search-results.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/search-results.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/final_app/search.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/final_app/search.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/bookbinder_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/bookbinder_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/bookbinder_helpers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/bookbinder_helpers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/config.rb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/config.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/index.html.md.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/index.html.md.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/javascripts/bookbinder.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/javascripts/bookbinder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/layouts/_header.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/layouts/_header.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/layouts/layout.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/layouts/layout.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/myservice" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/myservice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/stylesheets/base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/stylesheets/base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/stylesheets/book-styles.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/stylesheets/book-styles.css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/stylesheets/print.css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/stylesheets/print.css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/source/subnavs/myservice_subnav.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/source/subnavs/myservice_subnav.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/master_middleman/subdirectory_aware_assets.rb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/master_middleman/subdirectory_aware_assets.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs-book/output/preprocessing/sections/myservice" beforeDir="false" afterPath="$PROJECT_DIR$/docs-book/output/preprocessing/sections/myservice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs-content/index.html.md.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-content/index.html.md.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs-content/installing.html.md.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-content/installing.html.md.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs-content/release-notes.html.md.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-content/release-notes.html.md.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs-content/using.html.md.erb" beforeDir="false" afterPath="$PROJECT_DIR$/docs-content/using.html.md.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="169347057">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="erb" value="115" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open" />
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="RHTML" value="115" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open" />
+      <usages-collector id="statistics.go.postfix.template.usages.trigger" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html.md.erb" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs-content/index.html.md.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+            <state relative-caret-position="1415">
+              <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile.lock" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs-book/Gemfile.lock">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2859" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="release-notes.html.md.erb" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs-content/release-notes.html.md.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="installing.html.md.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs-content/installing.html.md.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="62" column="121" lean-forward="true" selection-start-line="62" selection-start-column="121" selection-end-line="62" selection-end-column="121" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="using.html.md.erb" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/docs-content/using.html.md.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LEGAL.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs-content/LEGAL.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="54" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_fix-search-tables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs-layout/_fix-search-tables.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.md.erb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs-book/master_middleman/source/index.html.md.erb">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="myservice_subnav.erb" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs-book/master_middleman/source/subnavs/myservice_subnav.erb">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>note</find>
+      <find>note.war</find>
+      <find>YOUR-PRODUCT-NAME</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,10 +115,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/docs-content/using.html.md.erb" />
         <option value="$PROJECT_DIR$/docs-content/installing.html.md.erb" />
+        <option value="$PROJECT_DIR$/docs-book/output/master_middleman/source/subnavs/myservice_subnav.erb" />
+        <option value="$PROJECT_DIR$/docs-book/master_middleman/source/subnavs/myservice_subnav.erb" />
         <option value="$PROJECT_DIR$/docs-content/release-notes.html.md.erb" />
         <option value="$PROJECT_DIR$/docs-content/index.html.md.erb" />
-        <option value="$PROJECT_DIR$/docs-content/using.html.md.erb" />
       </list>
     </option>
   </component>
@@ -113,14 +137,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="41" />
-    <option name="y" value="155" />
-    <option name="width" value="1440" />
-    <option name="height" value="663" />
+    <option name="y" value="23" />
+    <option name="width" value="1263" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -159,7 +180,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,28 +199,7 @@
               <item name="vte-tile-doc" type="b2602c69:ProjectViewProjectNode" />
               <item name="vte-tile-doc" type="462c0819:PsiDirectoryNode" />
               <item name="docs-book" type="462c0819:PsiDirectoryNode" />
-              <item name="final_app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vte-tile-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vte-tile-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="docs-book" type="462c0819:PsiDirectoryNode" />
               <item name="master_middleman" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vte-tile-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vte-tile-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="docs-book" type="462c0819:PsiDirectoryNode" />
-              <item name="master_middleman" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="vte-tile-doc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="vte-tile-doc" type="462c0819:PsiDirectoryNode" />
-              <item name="docs-book" type="462c0819:PsiDirectoryNode" />
-              <item name="master_middleman" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="subnavs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="vte-tile-doc" type="b2602c69:ProjectViewProjectNode" />
@@ -215,12 +217,17 @@
               <item name="docs-layout" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="vte-tile-doc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vte-tile-doc" type="462c0819:PsiDirectoryNode" />
+              <item name="docs-layout" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,59 +267,50 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="moduleWithDependencies" />
       </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
-    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
-      <Host>localhost</Host>
-      <Port>5050</Port>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SbtLocalSettings">
@@ -346,46 +344,97 @@
       <workItem from="1531161986537" duration="44000" />
       <workItem from="1531162070628" duration="1143000" />
       <workItem from="1531177376505" duration="6259000" />
-      <workItem from="1531329664264" duration="27742000" />
+      <workItem from="1531329664264" duration="32775000" />
+      <workItem from="1531453593876" duration="123000" />
+      <workItem from="1531453758250" duration="1568000" />
+      <workItem from="1531813827746" duration="192000" />
+      <workItem from="1531837148422" duration="6980000" />
+      <workItem from="1532055704706" duration="593000" />
+      <workItem from="1532089429910" duration="710000" />
+      <workItem from="1532138367672" duration="552000" />
+      <workItem from="1532274008179" duration="425000" />
+      <workItem from="1532365182247" duration="510000" />
+      <workItem from="1532385913788" duration="2196000" />
+      <workItem from="1532396766028" duration="410000" />
+      <workItem from="1532477761716" duration="30000" />
+      <workItem from="1532712870671" duration="46000" />
+      <workItem from="1532712982544" duration="20000" />
+      <workItem from="1532713033295" duration="711000" />
+      <workItem from="1532986661929" duration="24000" />
+      <workItem from="1532986709750" duration="188000" />
+      <workItem from="1533157666993" duration="1235000" />
+      <workItem from="1533165707333" duration="280000" />
+      <workItem from="1533834069259" duration="38000" />
+      <workItem from="1533834153994" duration="36000" />
+      <workItem from="1533836019577" duration="77000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35188000" />
+    <option name="totallyTimeSpent" value="57165000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="155" width="1440" height="663" extended-state="0" />
-    <editor active="true" />
+    <frame x="41" y="23" width="1263" height="733" extended-state="0" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="SBT Console" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237482" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37346438" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SBT Console" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3296501" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16237482" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="SBT Console" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.3296501" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -394,86 +443,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/style-guide.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs-content/release-notes.html.md.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs-layout/LEGAL.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs-layout/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs-content/LEGAL.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="141" lean-forward="true" selection-start-line="12" selection-start-column="141" selection-end-line="12" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs-content/index.html.md.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style-guide.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs-content/release-notes.html.md.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="46" lean-forward="true" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs-layout/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style-guide.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -492,9 +462,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/docs-book/master_middleman/source/index.html.md.erb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs-book/master_middleman/source/subnavs/myservice_subnav.erb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -518,31 +485,152 @@
         <state relative-caret-position="-2859" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs-content/release-notes.html.md.erb">
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/styleguide.css.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/layout-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="65" lean-forward="true" selection-start-line="16" selection-start-column="65" selection-end-line="16" selection-end-column="65" />
+        <state relative-caret-position="-6423" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/grey.css.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/doc-submenu.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/vendor/mermaid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4281" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_syntax-highlight.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-932" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_local-header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2207" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_layout-vars.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-711" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_header.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_global-header.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_fix-search-tables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/stylesheets/partials/_3rdparty.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="75" column="3" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs-content/installing.html.md.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="62" column="121" lean-forward="true" selection-start-line="62" selection-start-column="121" selection-end-line="62" selection-end-column="121" />
+    <entry file="file://$PROJECT_DIR$/style-guide.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="8" selection-start-column="8" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs-content/index.html.md.erb">
+    <entry file="file://$PROJECT_DIR$/docs-book/master_middleman/source/stylesheets/book-styles.css.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-book/output/master_middleman/source/stylesheets/book-styles.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="58" column="45" selection-start-line="58" selection-start-column="45" selection-end-line="58" selection-end-column="45" />
+        <state relative-caret-position="136">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/docs-content/using.html.md.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        <state relative-caret-position="357">
+          <caret line="21" column="134" selection-start-line="21" selection-start-column="134" selection-end-line="21" selection-end-column="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-content/installing.html.md.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-book/output/master_middleman/source/subnavs/myservice_subnav.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="65" selection-start-line="19" selection-start-column="65" selection-end-line="19" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-book/output/master_middleman/bookbinder_config.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/images/arrow_grey_right.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-book/output/master_middleman/bookbinder_helpers.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-book/output/master_middleman/config.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-book/output/master_middleman/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/images/menu-icon-white.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/images/arrow_grey_down.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-layout/source/images/pivotal-logo-big.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-content/index.html.md.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1415">
+          <caret line="132" column="20" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-content/release-notes.html.md.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs-book/master_middleman/source/subnavs/myservice_subnav.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="86" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
         </state>
       </provider>
     </entry>

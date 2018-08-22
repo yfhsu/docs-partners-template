@@ -1,68 +1,159 @@
 ---
-title: Installing and Configuring Vormetric Transparent Encryption for PCF
+title: Installing and Configuring Vormetric Transparent Encryption for PCF (Beta)
 owner: Partners
 ---
+This topic describes how to install and configure the Vormetric Transparent Encryption (VTE) for Pivotal Cloud
+Foundry (PCF) tile.  Users of the tile are assumed to be familiar with Vormetric security concepts and configuration of DSM.
 
-This topic describes how to install and configure the Vormetric Transparent Encryption for PCF tile.
+##<a id='workflow'></a>Before installing and configuring the VTE tile
 
-##<a id='install'></a>Install the Vormetric Transparent Encryption for PCF
+The following steps are recommended to enabling the VTE tile:
 
-To install the Vormetric Transparent Encryption for PCF tile on the Ops Manager Installation Dashboard, do the following:
+1. Choose a mapping strategy to support multi-tenancy and get familiar with the naming conventions used in the tile.  Review both the *Mapping PCF Organizations and Spaces to Vormetric Domains*  and the *Configuring Vormetric DSM* sections in the Appendix.
+1. Configure the VTE tile so that it conforms to the mapping strategy in the previous step.
+1. For each tenant,
+
+   * Map out a Pivotal organziation and space to a Vormetric domain. Prepare for the host group name, and the shared secret for the host group.
+
+   * Create the domain in the previous step.  Log in to the domain and create the host group and the shared secret in the previous step.  Configure a security policy for the domain, and host settings and guard path for the host group as described in the Appendix.
+
+   * Create the organization and space in the Apps Manager.
+
+   * Create an application instance, for example, the On-demand MySQL, in the organization and space created in the previous steps.  When the instance is created sucessfully, the VTE protecting the instance should be registered with the DSM and with the green guard status.
+
+##<a id='installandconfigvte'></a>Install and Configure the VTE Tile
+
+To install and configure the VTE tile, do the following:
 
 1. Download the product file from Pivotal Network.
+1. Navigate to the Ops Manager Installation Dashboard and click **Import a Product** to upload the product file.
+1. Under the **Import a Product** button, click **+** next to the version number of VTE for PCF.  This adds the tile to your staging area.
+1. Click the newly added **Vormetric Transparent Encryption for PCF** tile.
+1. From the **Settings** tab, select **Registration Service Config**.  The **Registration Service Configuration** pane
+ displays showing the configuration parameters for the Registration Service.  The Registration Service maps PCF organizations and spaces to Vormetric domains.
 
-2. Navigate to the Ops Manager Installation Dashboard and click **Import a Product** to upload the product file.
+    **Figure 1-Registration Service Config**
+  ![Registration Service Config](images/rsc.png)
+1. For **Data Security Manager (DSM) host name**, enter the fully qualified domain name (FQDN) of the DSM to which the VTE instances register.
+1. For **DSM Domain Mapping**, select the method of mapping the PCF organizations and spaces to DSM domains.  You can also select to use a fixed domain name (without any mapping) by selecting
+  **Single Fixed Domain**.  If you select this option, enter the domain name of the domain to which the VTE instaces belong in **Domain Name**.
+  Refer to the *Mapping PCF Organizations and Spaces to Vormetric Domains* section in the Appendix for information about the mapping options.
+1. For **Shared Secret for VTE registration with DSM**, enter the shared secret of the host group to which the VTE instances belong. **Note: This shared secret must be the same for all host groups and domains configured in the DSM.**
+1. Click **Save**.  This completes the configuration for the Registration Service.
+1. From the **Settings** tab, select **Default Registration Config**.  The **Default Registration Configuration** pane displays showing the default registration parameters.
+  The configuration of the default registration is required in case the Registration Service fails to generate data for the VTE to register with the DSM.
+    **Figure 2-Default Registration Config**
+  ![Default Registration Config](/images/drc.png)
+1. For **Default Data Security Manager (DSM) host name**, enter the FQDN of the DSM.
+1. For **Default Domain**, enter the name of the default domain to which the VTE instances belong.
+1. For **Default Host Group**, enter the host group that resides in the default domain to which the VTE instances belong.
+1. For **Shared Secret for VTE registration with DSM**, enter the shared secret for the default host group.
+1. Click **Save**.  This completes the configuration for the default registration.
+1. Return to the Ops Manager Installation Dashboard and click **Apply Changes** to apply the configuration changes
+  and complete the installation of the VTE tile.
 
-3. Under the **Import a Product** button, click **+** next to the version number of Vormetric Transparent Encryption for PCF.
-This adds the tile to your staging area.
-
-4. Click the newly added **Vormetric Transparent Encryption for PCF** tile to configure the tile.  Follow the instructions in
-**Configure the Vormetric Transparent Encryption for PCF** to complete the configuration.
-
-5. Once configuration is complete, return to the Ops Manager Installation Dashboard and click **Apply changes** to install the tile.
-
-6. Follow the instruction in **Configuring Vormetric Data Security Manager** to complete the required configuration for
-each domain before creating a service instance for the supported products.
-
-##<a id='configure'></a>Configure the Vormetric Transparent Encryption for PCF
-###Configuring Registration Service
-
-1. **TODO**
-
-2. **screenshots**
-
-3. Click **Save**.
-
-
-####Translating Pivotal Organization Space to Vormetric Domain
-
-**TODO, put content of the confluence page here**
-
-
-###Configuring default registration info
-
-1. **TODO**
-
-2. **screenshots**
-
-3. Click **Save**.
-
-
-##<a id='appendix-b'></a>Configuring Vormetric Data Security Manager
-
-1. A System Security administrator creates a domain that maps to a Pivotal Organization Space created by a PCF
-operator based on the tile configuration and the naming convention in **Translating Pivotal Organization Space to Vormetric Domain**.
-
-2. The System administrator creates a Domain administrator for the domain created in Step 1.
-
-3. The Domain administrator creates a Domain Security administrator with all privileges. For more separation of duty
-using different administrators privileges, refer to the Administrator Guide.
-
-4. The Domain Security administrator creates key, policy, and host group with host settings, shared secret, and
-guard path for the domain observing the naming convention in **Translating Pivotal Organization Space to Vormetric Domain**.
-The shared secret for the host group must be the same for all host groups across all domains.
-
-**TODO, put content/screen shots in the confluence page here**
+##<a id='appendix'></a>Appendix
+###<a id='appendixmapping'></a>Mapping PCF Organizations and Spaces to Vormetric Domains
+The following table shows the mapping of a PCF organization and space to a Vormetric DSM domain.  Make sure you follow the given domain name formats below when naming the DSM domain.
+  <table class="nice">
+      <th>Mapping</th>
+      <th>DSM Domain Name Format</th>
+      <th>Description</th>
+      <th>Example</th>
+      <tr>
+          <td>Organization</td>
+          <td>`PCF.<organization>`</td>
+          <td>The sanitized organization name\* prefixed with `PCF.`\.</td>
+          <td>For the organization `Thales`, configure the domain name as `PCF.Thales`.</td>
+      </tr>
+      <tr>
+        <td>Organization Space</td>
+        <td>`PCF.<organization>.<space>`</td>
+        <td>The sanitized space name\* is limited to 20 characters.  The sanitized organization name\* is limited to 60 characters.</td>
+        <td>For the organization `Thales` and the space `Dev`, configure the domain name as `PCF.Thales.Dev`.</td>
+      </tr>
+      <tr>
+          <td>Single Fixed Domain</td>
+          <td>n/a</td>
+          <td>The preconfigured domain name for VTE agents that protect all MySQL instances.</td>
+          <td>n/a</td>
+      </tr>
+  </table>
+  \*The domain name is limited to 64 characters.  The name must consist of alphanumeric characters and must start with an alpha character.  The only non\-alphanumeric characters allowed are the dot
+  \( \. \), the underscore \( \_ \), and the dash \( \- \)\.
 
 
+###<a id='appendixconfigdsm'></a>Configuring Vormetric DSM
+This section provides a summary of the required configuration in the DSM prior to installing and configuring the VTE tile.
+Each step includes the recommended DSM administrator role responsible for performing the given task.  Refer to the matching version of the *DSM Administrator Guide* for
+descriptions of each configuration, information about the administrator roles and responsibilities, and the separation of administrative duties.
 
+To configure the DSM, do the following:
+
+1. (System Security administrator) Create a domain that maps to the configured PCF organization and space in which
+  the service instances will reside (for example, MySQL service instances).  Refer to the *Mapping PCF Organizations and Spaces to Vormetric Domains* section for the naming convention for the domain name.
+1. (System administrator) Create a Domain administrator for the domain (created in Step 1).
+1. (Domain administrator) Create a Domain Security administrator with all privileges.
+1. (Domain Security administrator) Configure the following:
+
+  * **Agent Key**—Create a versioned symmetric encryption key using a strong key algorithm, such as AES256.
+  *	**Policy**—Create a security policy of the Live Data Transformation (LDT) type.  For more information about an LDT policy,
+    refer to the matching version of the *Vormetric Transparent Encryption (VTE), Live Data Transformation Guide*.
+
+    A policy consists of two sections: Security Rules and Key Selection Rules.  A complete policy must be configured as shown in Figure 3.  Detailed configuration of each section is illustrated in the figures that follow.
+      Configure your LDT security policy with the following settings:
+
+      **Figure 3-LDT Security Policy**
+      ![mysqlldtsecpolicy](images/mySQLLDTpolicy.PNG)
+      **Figure 4-LDT Security Policy, detailed view**
+
+      ![mysqlldtsecpolicydetails](images/mySQLLDTpolicydetails.PNG)
+
+      **Figure 5-User Set configurations**
+      ![usersetconfigs](images/user-set.png)
+
+      **Figure 6-User Set configurations, detailed view**
+      ![usersetconfigs](images/user-setdetails.png)
+
+      **Figure 7-Process Set configurations**
+      ![processsetconfigs](images/process-set.png)
+
+      **Figure 8-Process Set configurations, detailed view**
+      ![processsetconfigs](images/process-setdetails.png)
+
+      **Figure 9-Actions for Process Set**
+      ![actionsforprocessset](images/actions-after-select.png)
+
+      The key selection rule for an LDT policy must use a symmetric versioned key for the Transformation Key.  Create a key rule using the symmetric key created at the beginning of this step (Step 4).
+
+      **Figure 10-Key Selection Rules**
+      ![usersetconfigs](images/keyselectionrules.PNG)
+
+      **Figure 11-Key Selection Rules, detailed view**
+      ![usersetconfigs](images/keyselectionruledetails.PNG)
+
+  *	**Host Group**—Create a host group using the following naming convention: `PCF_<UPPER-CASE-OF-DEPLOYMENT-APP-NAME>`.
+      For example, for the application MySQL, configure the host group name as `PCF_MYSQL`.  For the host group description, include the organization, space, and instance name in the format
+      of `\<organization>\<space>\<instance_name>` to help you identify this host group.  Select the **Enable FS Agent Communication** option for the host group.
+
+  * **Host Settings**—Configure the host settings for the host group with the following rules:
+
+    ```
+     |authenticator|/usr/sbin/sshd
+     |authenticator|/bin/login
+     |authenticator|/var/vcap/bosh/bin/bosh-agent
+     |authenticator|/var/vcap/bosh/bin/monit
+     |su_root_no_auth|/usr/bin/sudo
+     |trust+arg=-p /var/vcap/store/mysql/|/bin/mkdir
+     |trust+arg=/var/vcap/store/mysql/data|/bin/mkdir
+     |trust+arg=vcap:vcap /var/vcap/store/mysql|/bin/chown
+     |trust+arg=vcap:vcap /var/vcap/store/mysql/data|/bin/chown
+     |authenticator_euid|/var/vcap/packages/percona-server/bin/mysqld
+    ```
+
+
+    **Figure 12-Host Settings**
+      ![hostsettings](images/host-settings.png)
+
+  *	**Shared Secret**—Create the same shared secret for all host groups in all domains.
+  *	**GuardPoint**—Create a GuardPoint of the **Directory (Auto Guard)** type.  Enter `/var/vcap/store` for guard path.
