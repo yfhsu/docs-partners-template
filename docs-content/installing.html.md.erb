@@ -144,4 +144,11 @@ Follow the steps below to configure the DSM:
       ![hostsettings](images/host-settings.png)
 
   *	**Shared Secret** — Create the same shared secret for ALL host groups configured to work with PCF.
+
+  **Figure 12-Shared Secret for the Host Group**
+  ![hostgroup-regsecret](images/hostgroup-regsecret.png)
+
   *	**GuardPoint** — Create a GuardPoint of the **Directory (Auto Guard)** type for the host group. Use the LDT policy created previously. Enter `/var/vcap/store` as the guard path.
+
+  **Figure 13-GuardPoint for the Host Group**
+  ![hostgroup-guardpath](images/hostgroup-guardpath.png)
